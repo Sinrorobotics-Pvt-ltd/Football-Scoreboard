@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+    <div class="marquee" hidden>
+        <span class="marquee__letter">G</span>
+        <span class="marquee__letter">o</span>
+        <span class="marquee__letter">o</span>
+        <span class="marquee__letter">o</span>
+        <span class="marquee__letter">a</span>
+        <span class="marquee__letter">a</span>
+        <span class="marquee__letter">a</span>
+        <span class="marquee__letter">l</span>
+        <span class="marquee__letter">l</span>
+        <span class="marquee__letter">l</span>
+    </div>
+    <div class="points">
+        <span class="points__team points__team--blue">0</span>
+        <span class="points__versus__label">Team A</span>
+        <span class="points__versus">&#215;</span>
+        <span class="points__versus__label">Team B</span>
+        <span class="points__team points__team--red">0</span>
+    </div>
+</main>
+
+<aside class="tools">
+    <button id="tool-score-blue" title="Blue goal" type="button" class="tools__button tools__button--blue">⚽️</button> 
+    <button id="tool-win-blue" title="Blue win" type="button" class="tools__button tools__button--blue">🏆</button>
+    <button id="tool-score-red" title="Red goal" type="button" class="tools__button tools__button--red">⚽️</button>
+    <button id="tool-win-red" title="Red win" type="button" class="tools__button tools__button--red">🏆</button>
+</aside>
+
+<script id="serialized-team-map" type="application/json">
+    {
+        "blue": {
+            "name": "blue",
+            "points": 0,
+            "colorAsHex": "#3498DB"
+        },
+        "red": {
+            "name": "red",
+            "points": 0,
+            "colorAsHex": "#E74C3C"
+        }
+    }
+</script>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js'></script><script  src="./script.js"></script>
+
+
+  <!-- NESA TECHNOLOGIES -->
+</body>
+</html>
